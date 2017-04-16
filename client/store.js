@@ -9,7 +9,7 @@ import comments from './data/comments';
 import posts from './data/posts';
 
 
-//create an objec for the default data
+//create an object for the default data
 const defaultState = {
   posts,
   comments 
@@ -17,6 +17,6 @@ const defaultState = {
 
 const store = createStore(rootReducer, defaultState);
 
-export const history = syncHistoryWithStore(browswerHistory, store);
+export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
